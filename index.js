@@ -240,6 +240,9 @@ module.exports = (nextConfig = {}) => ({
             const manifest = manifestEntries.map(m => {
               m.url = m.url.replace('/_next//static/image', '/_next/static/image')
               m.url = m.url.replace('/_next//static/media', '/_next/static/media')
+              console.log('Before', m.url)
+              m.url = m.url.replace('//_next/static/chunks', '/_next/static/chunks')
+              console.log('After', m.url)
               if (m.revision === null) {
                 let key = m.url
                 if (key.startsWith(config.output.publicPath)) {
