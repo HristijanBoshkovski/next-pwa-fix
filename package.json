@@ -1,5 +1,5 @@
 {
-  "name": "next-pwa",
+  "name": "next-pwa-fix",
   "version": "5.5.4",
   "description": "Next.js with PWA, powered by workbox.",
   "main": "index.js",
